@@ -1,40 +1,37 @@
-# Loan-Approval-Prediction-Model
-Overview
-The Loan Approval Prediction System is a machine learning-based project that predicts whether a loan application will be approved based on various input features. This project covers all stages of the ML pipeline, including data preprocessing, feature engineering, model building, and evaluation.
+# Loan Approval Prediction System
 
-Features
-End-to-End Pipeline: Data preprocessing, feature selection, model training, and evaluation.
-Machine Learning Model: Random Forest Classifier for robust and interpretable predictions.
-Data Insights: Visualizations like heatmaps and distribution plots.
-Scalable Code: Modular structure for seamless integration into applications.
-Local Testing: Test the model on new datasets with ease.
-Dataset
-Input Features:
-loan_id - Unique identifier for each loan.
-no_of_dependents - Number of dependents of the applicant.
-education - Education level of the applicant (Graduate/Not Graduate).
-self_employed - Employment type (Yes/No).
-income_annum - Applicant's annual income.
-loan_amount - Amount of the requested loan.
-loan_term - Loan repayment period in months.
-cibil_score - Applicant's credit score.
-residential_assets_value - Value of residential assets owned.
-commercial_assets_value - Value of commercial assets owned.
-luxury_assets_value - Value of luxury assets owned.
-bank_asset_value - Total value of the applicant's bank savings.
-Output:
-loan_status - Approval status (Approved/Not Approved).
-Project Workflow
-Data Preprocessing:
+This project is a machine learning-based system that predicts loan approvals using **Random Forest Classifier**. It analyzes applicant details, processes the data, and provides an accurate prediction on loan eligibility.
 
-Handle missing values.
-Encode categorical features.
-Normalize numerical features.
-Model Training:
+## Features:
+- Predicts loan approval based on multiple applicant features.
+- Real-time input support for testing new cases.
+- Handles missing data with preprocessing techniques.
+- Visualizations for data insights and feature correlations.
 
-Split data into train and test sets.
-Train a Random Forest Classifier.
-Evaluate using accuracy, confusion matrix, and classification report.
-Testing:
+## Requirements
 
-Load the trained model and test with new datasets.
+To set up the project and install the necessary dependencies, follow the steps below:
+
+### Clone the repository:
+```bash
+git clone https://github.com/Tahoora76/Loan-Approval-Prediction-Model.git
+cd Loan-Approval-Prediction-Model
+```
+Create a virtual environment and install dependencies:
+```bash
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+pip install -r requirements.txt
+```
+## How It Works
+- Data Preprocessing
+- Handles missing values.
+- Encodes categorical variables.
+- Scales numerical features.
+## Model Training
+- Uses a Random Forest Classifier.
+- Trained on features like income, loan amount, CIBIL score, etc.
+## Prediction
+- Predicts loan approval (Approved or Rejected) based on applicant features.
+## Evaluation
+- Evaluates model performance using accuracy and classification metrics.
